@@ -17588,8 +17588,15 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget {
 .bootstrap-datetimepicker-widget.dropdown-black table td .btn[data-action="togglePeriod"] {
   background: transparent; }
 
-
-  .navbar{
+ .navbar{
     position:fixed;
-    background-color: red !important;
+    background-color: #172b4d !important;
+    color: white !important;
+  } 
+  .nav-link-text{
+    color: white !important;
+  }
+
+  .navbar-vertical.navbar-expand-xs .navbar-nav > .nav-item > .nav-link.active {
+    color: #172b4d !important;
   }

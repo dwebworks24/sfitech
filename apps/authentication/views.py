@@ -13,15 +13,12 @@ def login_view(request):
 
     if request.method == "POST":
         if form.is_valid():
-            print("start")
             username = form.cleaned_data.get("username")
             password = form.cleaned_data.get("password")
             user = authenticate(username=username, password=password)
             print("end")
             if user is not None:
-                print('use in')
-                login_user = login(request, user)
-                print(login_user)
+                login(request, user)
                 return redirect("/")
             else:
                 msg = 'Invalid credentials'
